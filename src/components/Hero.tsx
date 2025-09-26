@@ -22,12 +22,13 @@ const Hero = () => {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  useEffect(() => {
-    fetch('/loop-header.lottie')
-      .then(response => response.json())
-      .then(data => setLottieData(data))
-      .catch(error => console.error("Error loading Lottie animation:", error));
-  }, []);
+  // Lottie animation disabled to prevent loading errors
+  // useEffect(() => {
+  //   fetch('/loop-header.lottie')
+  //     .then(response => response.json())
+  //     .then(data => setLottieData(data))
+  //     .catch(error => console.error("Error loading Lottie animation:", error));
+  // }, []);
 
   useEffect(() => {
     // Skip effect on mobile
