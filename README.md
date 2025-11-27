@@ -62,8 +62,36 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/35d72d2e-6e25-40e5-9b0c-c0d1a7c1b727) and click on Share -> Publish.
+### GitHub Pages (Recommended)
 
-## I want to use a custom domain - is that possible?
+This project is configured to automatically deploy to GitHub Pages. Follow these steps:
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+1. **Enable GitHub Pages in your repository settings:**
+   - Go to your repository on GitHub
+   - Navigate to Settings → Pages
+   - Under "Build and deployment", select "GitHub Actions" as the source
+
+2. **Push to the main branch:**
+   - Any push to the `main` branch will trigger the deployment workflow
+   - The workflow will build the project and deploy it to GitHub Pages
+
+3. **Custom Domain (Optional):**
+   - The CNAME file is already configured for `virskyline.dev`
+   - Add your custom domain in GitHub Settings → Pages → Custom domain
+   - Configure your DNS provider to point to GitHub Pages
+
+### Manual Deployment
+
+You can also deploy manually to other platforms:
+
+```sh
+# Build the project
+npm run build
+
+# The dist/ folder contains the production-ready files
+# Deploy the contents of dist/ to your hosting provider
+```
+
+### Lovable Platform
+
+Simply open [Lovable](https://lovable.dev/projects/35d72d2e-6e25-40e5-9b0c-c0d1a7c1b727) and click on Share → Publish.
