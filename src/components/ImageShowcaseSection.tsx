@@ -18,8 +18,8 @@ const ImageShowcaseSection = () => {
         <div className="rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant mx-auto max-w-4xl animate-on-scroll">
           <div className="w-full">
             <img 
-              src="/lovable-uploads/c3d5522b-6886-4b75-8ffc-d020016bb9c2.png" 
-              alt="Advanced humanoid robot with orange and white design" 
+              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&auto=format&fit=crop" 
+              alt="Advanced technology showcase" 
               className="w-full h-auto object-cover"
             />
           </div>
