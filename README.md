@@ -1,14 +1,29 @@
-# Portfolio
+# Niraj Patel - Portfolio
 
-My personal portfolio website.
+Personal portfolio website for Niraj Patel, Senior Full Stack Web Developer.
+
+🌐 **Live Site:** [virskyline.dev](https://virskyline.dev)
+
+## About
+
+A modern, responsive portfolio showcasing my work as a Senior Full Stack Developer at Hype Marketing Agency. Built with React, TypeScript, and TailwindCSS.
+
+## Features
+
+- 🎨 Modern UI with smooth animations
+- 📱 Fully responsive design
+- ⚡ Fast performance with Vite
+- 🎯 SEO optimized
+- 📧 Contact form integration
 
 ## Technologies
 
-- Vite
+- React 18
 - TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Vite
+- TailwindCSS
+- shadcn/ui
+- Lucide Icons
 
 ## Development
 
@@ -25,13 +40,7 @@ npm run build
 
 ## Deployment
 
-### GitHub Pages
-
-This project is configured to automatically deploy to GitHub Pages:
-
-1. Enable GitHub Pages in repository settings (Settings → Pages → Source: GitHub Actions)
-2. Push to the `main` branch to trigger deployment
-3. Custom domain is configured for `virskyline.dev`
+Deployed on Vercel via GitHub integration.
 
 ### Manual Deployment
 
@@ -39,3 +48,12 @@ This project is configured to automatically deploy to GitHub Pages:
 npm run build
 # Deploy the dist/ folder to your hosting provider
 ```
+
+## Contact
+
+- 📧 Email: work.virskyline@gmail.com
+- 🌐 Website: [virskyline.dev](https://virskyline.dev)
+
+---
+
+Designed & Developed by Niraj Patel
