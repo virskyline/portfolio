@@ -65,7 +65,7 @@ const Hero = () => {
               Senior Full Stack Web Developer
             </h2>
             
-            <p className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-600 font-normal text-base sm:text-lg text-left lg:text-left" style={{ animationDelay: "0.5s" }}>
+            <p className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-600 font-normal text-base sm:text-lg text-center lg:text-left" style={{ animationDelay: "0.5s" }}>
               With 2.5+ years of experience building modern, responsive websites. 
               Currently leading a team at <span className="text-pulse-500 font-semibold">Hype Marketing Agency</span>. 
               Specialized in React, Next.js, Vue, and e-commerce solutions.

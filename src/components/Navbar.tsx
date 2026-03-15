@@ -92,6 +92,14 @@ const Navbar = () => {
         "fixed inset-0 z-40 bg-white flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
+        {/* Close button inside mobile menu */}
+        <button
+          className="absolute top-4 right-4 p-3 text-gray-700 hover:text-pulse-500 focus:outline-none"
+          onClick={toggleMenu}
+          aria-label="Close menu"
+        >
+          <X size={28} />
+        </button>
         <nav className="flex flex-col space-y-6 items-center mt-8">
           <a 
             href="#" 

@@ -98,6 +98,13 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "CreateHype",
+      category: "Marketing",
+      platform: "Custom",
+      url: "createhype.co",
+      description: "Full development of the CreateHype marketing agency website with modern design and responsive layout."
+    },
+    {
       title: "Kashmir Organic Canada",
       category: "E-commerce",
       platform: "WordPress",
