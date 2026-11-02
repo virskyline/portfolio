@@ -143,10 +143,17 @@ const Projects = () => {
       category: "EdTech",
       platform: "Custom",
       description: "Educational technology solutions with course management and student portals."
+    },
+    {
+      title: "Arteiza",
+      category: "Web Design",
+      platform: "Website",
+      url: "arteiza.com",
+      description: "Website project for Arteiza. Visit the live website to explore its design and user experience."
     }
   ];
 
-  const filters = ["all", "E-commerce", "Corporate", "Marketing", "EdTech"];
+  const filters = ["all", "E-commerce", "Corporate", "Marketing", "EdTech", "Web Design"];
 
   const filteredProjects = activeFilter === "all" 
     ? projects 
