@@ -59,7 +59,7 @@ const About = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white" id="about" ref={sectionRef}>
+    <section className="py-16 md:py-24 section-surface" id="about" ref={sectionRef}>
       <div className="section-container">
         <div className="text-center mb-12">
           <div className="pulse-chip mx-auto mb-3 sm:mb-4 opacity-0 fade-in-element">
@@ -112,12 +112,12 @@ const About = () => {
                 key={index}
                 className={cn(
                   "glass-card p-6 opacity-0 fade-in-element",
-                  "hover:bg-gradient-to-br hover:from-white hover:to-pulse-50",
+                  "hover:-translate-y-1",
                   "transition-all duration-300"
                 )}
                 style={{ animationDelay: `${0.1 * index}s` }}
               >
-                <div className="w-12 h-12 bg-pulse-50 rounded-full flex items-center justify-center text-pulse-500 mb-4">
+                <div className="w-12 h-12 bg-[#1951fc]/15 border border-[#78c1fc]/25 rounded-full flex items-center justify-center text-pulse-500 mb-4">
                   {item.icon}
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">{item.title}</h4>
