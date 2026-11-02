@@ -19,7 +19,7 @@ const SkillCategory = ({ title, skills, index }: SkillCategoryProps) => {
         {skills.map((skill, i) => (
           <span 
             key={i}
-            className="px-3 py-1.5 bg-pulse-50 text-pulse-600 rounded-full text-sm font-medium hover:bg-pulse-100 transition-colors duration-200"
+            className="px-3 py-1.5 bg-[#1951fc]/15 border border-[#78c1fc]/20 text-[#cbe9fd] rounded-full text-sm font-medium hover:bg-pulse-100 transition-colors duration-200"
           >
             {skill}
           </span>
@@ -81,7 +81,7 @@ const Skills = () => {
   ];
   
   return (
-    <section className="py-16 md:py-24 bg-gray-50" id="skills" ref={sectionRef}>
+    <section className="py-16 md:py-24 section-surface-alt" id="skills" ref={sectionRef}>
       <div className="section-container">
         <div className="text-center mb-12">
           <div className="pulse-chip mx-auto mb-3 sm:mb-4 opacity-0 fade-in-element">
