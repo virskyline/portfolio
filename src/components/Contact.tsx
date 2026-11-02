@@ -59,7 +59,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white" id="contact" ref={sectionRef}>
+    <section className="py-16 md:py-24 section-surface" id="contact" ref={sectionRef}>
       <div className="section-container">
         <div className="text-center mb-12">
           <div className="pulse-chip mx-auto mb-3 sm:mb-4 opacity-0 fade-in-element">
@@ -86,7 +86,7 @@ const Contact = () => {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-pulse-50 rounded-full flex items-center justify-center text-pulse-500 flex-shrink-0">
+                <div className="w-12 h-12 bg-[#1951fc]/15 border border-[#78c1fc]/25 rounded-full flex items-center justify-center text-pulse-500 flex-shrink-0">
                   <Mail size={20} />
                 </div>
                 <div>
