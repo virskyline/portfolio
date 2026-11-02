@@ -40,7 +40,7 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 py-2 sm:py-3 md:py-4 transition-all duration-300",
         isScrolled 
-          ? "bg-white/80 backdrop-blur-md shadow-sm" 
+          ? "bg-[#03195b]/65 backdrop-blur-2xl border-b border-[#cbe9fd]/15 shadow-[0_8px_32px_rgba(0,0,0,.22)]" 
           : "bg-transparent"
       )}
     >
@@ -79,7 +79,7 @@ const Navbar = () => {
 
         {/* Mobile menu button - increased touch target */}
         <button 
-          className="md:hidden text-gray-700 p-3 focus:outline-none" 
+          className="md:hidden text-[#cbe9fd] p-3 focus:outline-none" 
           onClick={toggleMenu}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
@@ -89,12 +89,12 @@ const Navbar = () => {
 
       {/* Mobile Navigation - improved for better touch experience */}
       <div className={cn(
-        "fixed inset-0 z-40 bg-white flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
+        "fixed inset-0 z-40 bg-[#020817]/95 backdrop-blur-2xl flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
         {/* Close button inside mobile menu */}
         <button
-          className="absolute top-4 right-4 p-3 text-gray-700 hover:text-pulse-500 focus:outline-none"
+          className="absolute top-4 right-4 p-3 text-[#cbe9fd] hover:text-[#78c1fc] focus:outline-none"
           onClick={toggleMenu}
           aria-label="Close menu"
         >
@@ -103,7 +103,7 @@ const Navbar = () => {
         <nav className="flex flex-col space-y-6 items-center mt-8">
           <a 
             href="#" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="text-xl text-[#edf7ff] font-medium py-3 px-6 w-full text-center rounded-xl hover:bg-[#1951fc]/20" 
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
