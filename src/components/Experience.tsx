@@ -64,7 +64,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50" id="experience" ref={sectionRef}>
+    <section className="py-16 md:py-24 section-surface-alt" id="experience" ref={sectionRef}>
       <div className="section-container">
         <div className="text-center mb-12">
           <div className="pulse-chip mx-auto mb-3 sm:mb-4 opacity-0 fade-in-element">
@@ -84,7 +84,7 @@ const Experience = () => {
               key={index}
               className={cn(
                 "relative pl-8 pb-12 last:pb-0 opacity-0 fade-in-element",
-                "before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-pulse-200",
+                "before:absolute before:left-0 before:top-0 before:bottom-0 before:w-0.5 before:bg-[#3781fc]/40",
                 index === experiences.length - 1 && "before:hidden"
               )}
               style={{ animationDelay: `${0.2 * index}s` }}
@@ -112,7 +112,7 @@ const Experience = () => {
                 <ul className="space-y-2">
                   {exp.responsibilities.map((resp, i) => (
                     <li key={i} className="flex items-start gap-2 text-gray-600 text-sm">
-                      <CheckCircle2 size={16} className="text-green-500 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 size={16} className="text-[#78c1fc] mt-0.5 flex-shrink-0" />
                       {resp}
                     </li>
                   ))}
