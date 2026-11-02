@@ -19,7 +19,7 @@ const ProjectCard = ({ title, category, platform, url, description, index }: Pro
       style={{ animationDelay: `${0.1 * index}s` }}
     >
       {/* Project Image Placeholder */}
-      <div className="h-48 bg-gradient-to-br from-pulse-400 to-pulse-600 flex items-center justify-center relative overflow-hidden">
+      <div className="h-48 bg-gradient-to-br from-[#3781fc] via-[#1951fc] to-[#03195b] flex items-center justify-center relative overflow-hidden">
         <Globe className="w-16 h-16 text-white/30" />
         <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
           {url && (
@@ -27,7 +27,7 @@ const ProjectCard = ({ title, category, platform, url, description, index }: Pro
               href={`https://${url}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white text-pulse-600 px-4 py-2 rounded-full font-medium flex items-center gap-2 hover:bg-pulse-50 transition-colors"
+              className="bg-[#cbe9fd]/90 text-[#03195b] px-4 py-2 rounded-full font-medium flex items-center gap-2 hover:bg-white transition-colors"
             >
               Visit Site <ExternalLink size={16} />
             </a>
@@ -160,7 +160,7 @@ const Projects = () => {
     : projects.filter(p => p.category === activeFilter);
   
   return (
-    <section className="py-16 md:py-24 bg-white" id="projects" ref={sectionRef}>
+    <section className="py-16 md:py-24 section-surface" id="projects" ref={sectionRef}>
       <div className="section-container">
         <div className="text-center mb-12">
           <div className="pulse-chip mx-auto mb-3 sm:mb-4 opacity-0 fade-in-element">
@@ -183,8 +183,8 @@ const Projects = () => {
               className={cn(
                 "px-4 py-2 rounded-full text-sm font-medium transition-all duration-200",
                 activeFilter === filter
-                  ? "bg-pulse-500 text-white"
-                  : "bg-gray-100 text-gray-600 hover:bg-pulse-50 hover:text-pulse-600"
+                  ? "bg-gradient-to-r from-[#3781fc] to-[#1951fc] text-white shadow-[0_6px_20px_rgba(25,81,252,.3)]"
+                  : "bg-white/5 border border-white/10 text-[#b9d8f7] hover:bg-[#1951fc]/20 hover:text-white"
               )}
             >
               {filter === "all" ? "All Projects" : filter}
