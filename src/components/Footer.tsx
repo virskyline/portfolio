@@ -4,13 +4,13 @@ import { Mail, Github, Linkedin, Code2 } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-900 text-white py-12">
+    <footer className="w-full bg-[#020817] text-[#edf7ff] py-12">
       <div className="section-container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Left - Branding */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold mb-2">Niraj Patel</h3>
-            <p className="text-gray-400 text-sm">Senior Full Stack Web Developer</p>
+            <p className="text-[#9dc9f3] text-sm">Senior Full Stack Web Developer</p>
           </div>
           
           {/* Center - Quick Links */}
