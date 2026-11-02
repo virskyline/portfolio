@@ -65,17 +65,17 @@ export default {
 				},
 				// Custom colors for virskyline
 				pulse: {
-					"50": "#fff7ed",
-					"100": "#ffedd5",
-					"200": "#fed7aa",
-					"300": "#fdba74",
-					"400": "#fb923c",
-					"500": "#f97316", // Primary orange
-					"600": "#ea580c",
-					"700": "#c2410c",
-					"800": "#9a3412",
-					"900": "#7c2d12",
-					"950": "#431407",
+					"50": "#eff6ff",
+					"100": "#dbeafe",
+					"200": "#bfdbfe",
+					"300": "#93c5fd",
+					"400": "#60a5fa",
+					"500": "#1951fc", // Primary electric blue
+					"600": "#0b2cb1",
+					"700": "#03195b",
+					"800": "#061747",
+					"900": "#04102f",
+					"950": "#020817",
 				},
 				dark: {
 					"900": "#121212", // Almost black
@@ -137,9 +137,9 @@ export default {
 				'float': 'float 6s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'hero-gradient': 'linear-gradient(90deg, hsla(24, 100%, 83%, 1) 0%, hsla(341, 91%, 68%, 1) 100%)',
-				'hero-gradient-2': 'linear-gradient(90deg, hsla(39, 100%, 77%, 1) 0%, hsla(22, 90%, 57%, 1) 100%)',
-				'pulse-gradient': 'linear-gradient(180deg, rgba(249,115,22,0.8) 0%, rgba(249,115,22,0) 100%)',
+				'hero-gradient': 'linear-gradient(90deg, #3781fc 0%, #0b2cb1 55%, #03195b 100%)',
+				'hero-gradient-2': 'linear-gradient(90deg, #cbe9fd 0%, #3781fc 100%)',
+				'pulse-gradient': 'linear-gradient(180deg, rgba(25,81,252,0.8) 0%, rgba(25,81,252,0) 100%)',
 			},
 			fontFamily: {
 				'sans': ['Inter', '-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
