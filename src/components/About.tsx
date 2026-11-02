@@ -59,8 +59,9 @@ const About = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 section-surface" id="about" ref={sectionRef}>
-      <div className="section-container">
+    <section className="about-flow relative overflow-hidden py-16 md:py-24 section-surface" id="about" ref={sectionRef}>
+      <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#03195b]/60 to-transparent" />
+      <div className="section-container relative z-10">
         <div className="text-center mb-12">
           <div className="pulse-chip mx-auto mb-3 sm:mb-4 opacity-0 fade-in-element">
             <span>About Me</span>
@@ -79,7 +80,7 @@ const About = () => {
           {/* Left Side - About Text */}
           <div className="opacity-0 fade-in-element">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Building the Web, One Project at a Time
+              Turning Ideas Into Useful Products
             </h3>
             <p className="text-gray-600 mb-4">
               With <strong>1.5 years of industry experience</strong> at Hype Marketing Agency and 
