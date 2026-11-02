@@ -59,8 +59,14 @@ const About = () => {
   ];
 
   return (
-    <section className="about-flow relative overflow-hidden py-16 md:py-24 section-surface" id="about" ref={sectionRef}>
-      <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-[#03195b]/60 to-transparent" />
+    <section className="about-flow relative -mt-1 overflow-hidden pt-12 pb-20 md:pt-16 md:pb-28 section-surface" id="about" ref={sectionRef}>
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-0">
+        <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[#03195b]/55 via-[#03195b]/20 to-transparent" />
+        <div className="absolute -left-40 top-20 h-80 w-80 rounded-full bg-[#1951fc]/10 blur-[100px]" />
+        <div className="absolute -right-40 top-44 h-96 w-96 rounded-full bg-[#3781fc]/10 blur-[110px]" />
+        <div className="absolute inset-x-[8%] top-0 h-px bg-gradient-to-r from-transparent via-[#78c1fc]/35 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent to-[#020817]/30" />
+      </div>
       <div className="section-container relative z-10">
         <div className="text-center mb-12">
           <div className="pulse-chip mx-auto mb-3 sm:mb-4 opacity-0 fade-in-element">
@@ -76,7 +82,7 @@ const About = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid items-center gap-8 md:grid-cols-[1.02fr_.98fr] md:gap-12">
           {/* Left Side - About Text */}
           <div className="opacity-0 fade-in-element">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -100,7 +106,7 @@ const About = () => {
             
             <a 
               href="#contact" 
-              className="inline-flex items-center gap-2 bg-pulse-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-pulse-600 transition-all duration-300"
+              className="inline-flex items-center gap-2 rounded-full border border-[#cbe9fd]/35 bg-gradient-to-r from-[#3781fc] via-[#1951fc] to-[#0b2cb1] px-6 py-3 font-semibold text-white shadow-[0_10px_30px_rgba(25,81,252,.25),inset_0_1px_0_rgba(255,255,255,.25)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(25,81,252,.38)]"
             >
               Let's Work Together
             </a>
@@ -118,7 +124,7 @@ const About = () => {
                 )}
                 style={{ animationDelay: `${0.1 * index}s` }}
               >
-                <div className="w-12 h-12 bg-[#1951fc]/15 border border-[#78c1fc]/25 rounded-full flex items-center justify-center text-pulse-500 mb-4">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-2xl border border-[#78c1fc]/25 bg-gradient-to-br from-[#78c1fc]/20 to-[#1951fc]/20 text-[#78c1fc] shadow-[inset_0_1px_0_rgba(255,255,255,.18)]">
                   {item.icon}
                 </div>
                 <h4 className="font-semibold text-gray-900 mb-2">{item.title}</h4>
