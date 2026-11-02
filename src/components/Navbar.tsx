@@ -115,7 +115,7 @@ const Navbar = () => {
           </a>
           <a 
             href="#about" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="text-xl text-[#edf7ff] font-medium py-3 px-6 w-full text-center rounded-xl border border-transparent hover:border-[#cbe9fd]/20 hover:bg-[#1951fc]/20 transition-colors" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
