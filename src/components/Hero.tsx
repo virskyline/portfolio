@@ -104,13 +104,13 @@ const Hero = () => {
             <div className="flex gap-4 justify-center lg:justify-start opacity-0 animate-fade-in" style={{ animationDelay: "0.7s" }}>
               <a 
                 href="mailto:work.virskyline@gmail.com" 
-                className="w-12 h-12 bg-pulse-50 rounded-full flex items-center justify-center text-pulse-500 hover:bg-pulse-500 hover:text-white transition-all duration-300"
+                className="w-12 h-12 rounded-2xl flex items-center justify-center text-[#cbe9fd] border border-[#cbe9fd]/20 bg-[#0b2cb1]/20 backdrop-blur-xl hover:bg-[#1951fc]/40 hover:-translate-y-1 hover:border-[#78c1fc]/60 transition-all duration-300"
                 aria-label="Email"
               >
                 <Mail size={20} />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/virskyline" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-pulse-50 rounded-full flex items-center justify-center text-pulse-500 hover:bg-pulse-500 hover:text-white transition-all duration-300"
@@ -119,7 +119,7 @@ const Hero = () => {
                 <Github size={20} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/virskyline" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-pulse-50 rounded-full flex items-center justify-center text-pulse-500 hover:bg-pulse-500 hover:text-white transition-all duration-300"
@@ -133,16 +133,16 @@ const Hero = () => {
           {/* Profile Image/Avatar Area */}
           <div className="flex-1 flex justify-center lg:justify-end opacity-0 animate-fade-in" ref={containerRef} style={{ animationDelay: "0.8s" }}>
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-pulse-400 to-pulse-600 flex items-center justify-center shadow-2xl">
-                <div className="w-[95%] h-[95%] rounded-full bg-white flex items-center justify-center">
-                  <span className="text-6xl sm:text-7xl lg:text-8xl font-bold text-pulse-500">NP</span>
+              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-[36%] rotate-3 bg-gradient-to-br from-[#78c1fc]/80 via-[#1951fc] to-[#03195b] p-[1px] shadow-[0_30px_100px_rgba(25,81,252,.35)]">
+                <div className="w-full h-full rounded-[36%] -rotate-3 bg-gradient-to-br from-[#cbe9fd]/15 via-[#0b2cb1]/40 to-[#020817] backdrop-blur-2xl border border-[#cbe9fd]/30 flex items-center justify-center shadow-[inset_0_1px_0_rgba(255,255,255,.45)]">
+                  <span className="text-6xl sm:text-7xl lg:text-8xl font-bold tracking-[-.08em] text-transparent bg-clip-text bg-gradient-to-br from-white via-[#cbe9fd] to-[#3781fc]">NP</span>
                 </div>
               </div>
               {/* Floating badges */}
-              <div className="absolute -top-4 -right-4 bg-white px-4 py-2 rounded-full shadow-lg animate-bounce">
-                <span className="text-sm font-semibold text-pulse-500">20+ Projects</span>
+              <div className="absolute -top-4 -right-4 bg-[#03195b]/70 border border-[#cbe9fd]/25 backdrop-blur-xl px-4 py-2 rounded-2xl shadow-lg">
+                <span className="text-sm font-semibold text-[#cbe9fd]">20+ Projects</span>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-white px-4 py-2 rounded-full shadow-lg animate-bounce" style={{ animationDelay: '0.5s' }}>
+              <div className="absolute -bottom-4 -left-4 bg-[#03195b]/70 border border-[#cbe9fd]/25 backdrop-blur-xl px-4 py-2 rounded-2xl shadow-lg" style={{ animationDelay: '0.5s' }}>
                 <span className="text-sm font-semibold text-pulse-500">2.5+ Years Exp</span>
               </div>
             </div>
