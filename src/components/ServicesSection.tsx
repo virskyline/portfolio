@@ -81,7 +81,7 @@ const ServicesSection = () => {
       badge: "Frontend",
       title: "Beautiful & Responsive Interfaces",
       description: "Crafting pixel-perfect, mobile-first designs using React, Vue, Next.js, and TailwindCSS",
-      bgColor: "from-orange-500 to-orange-700"
+      bgColor: "from-[#3781fc] to-[#03195b]"
     },
     {
       badge: "Backend",
@@ -93,7 +93,7 @@ const ServicesSection = () => {
       badge: "E-commerce",
       title: "Stores That Convert",
       description: "Creating high-converting online stores with WordPress, Shopify, and custom solutions",
-      bgColor: "from-amber-500 to-orange-600"
+      bgColor: "from-[#78c1fc] to-[#1951fc]"
     }
   ];
 
@@ -104,7 +104,7 @@ const ServicesSection = () => {
       style={{ height: '300vh' }}
       id="services"
     >
-      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white">
+      <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden section-surface">
         <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col">
           <div className="mb-2 md:mb-3">
             <div className="flex items-center gap-4 mb-2 md:mb-2 pt-8 sm:pt-6 md:pt-4">
