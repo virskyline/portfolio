@@ -76,7 +76,7 @@ const Hero = () => {
                 href="#contact" 
                 className="flex items-center justify-center group w-full sm:w-auto text-center"
                 style={{
-                  backgroundColor: '#FE5C02',
+                  background: 'linear-gradient(135deg, #3781fc 0%, #1951fc 48%, #0b2cb1 100%)',
                   borderRadius: '1440px',
                   boxSizing: 'border-box',
                   color: '#FFFFFF',
@@ -84,7 +84,9 @@ const Hero = () => {
                   fontSize: '14px',
                   lineHeight: '20px',
                   padding: '16px 24px',
-                  border: '1px solid white',
+                  border: '1px solid rgba(203,233,253,.55)',
+                  boxShadow: '0 12px 32px rgba(25,81,252,.32), inset 0 1px 0 rgba(255,255,255,.35)',
+                  backdropFilter: 'blur(18px)',
                 }}
               >
                 Hire Me
@@ -92,7 +94,7 @@ const Hero = () => {
               </a>
               <a 
                 href="#projects" 
-                className="flex items-center justify-center w-full sm:w-auto text-center px-6 py-4 border-2 border-gray-300 rounded-full font-medium text-gray-700 hover:border-pulse-500 hover:text-pulse-500 transition-all duration-300"
+                className="button-secondary flex items-center justify-center w-full sm:w-auto text-center px-6 py-4 rounded-full font-medium transition-all duration-300"
               >
                 View Projects
               </a>
